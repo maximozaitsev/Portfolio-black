@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap");
+
+body {
+  position: relative;
+  font-family: inter;
+  background-color: black;
+  height: 100%;
+}
+.container {
+  max-width: 1260px;
+  margin: auto;
+  color: white;
+  background-color: black;
+}
+.header {
+  height: 213px;
+}
+
+.header__text {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__fimiblaq {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #f9f5ff;
+}
+.header__about {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f9f5ff;
+}
+.header__projects {
+  padding-left: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f9f5ff;
+}
+.header__contact {
+  padding-left: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f9f5ff;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact__text {
+  max-width: 610px;
+}
+
+.name {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fafbff;
+  margin-bottom: 24px;
+}
+.position {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #fafbff;
+  margin-bottom: 12px;
+}
+.skills {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fafbff;
+  margin-bottom: 48px;
+}
+.btn {
+  width: 184px;
+  height: 48px;
+  background: #f9f5ff;
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0a0119;
+}
+/* .contact__photo {
+} */
+
+.gettoknowme {
+  text-align: center;
+  padding: 93px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 28px;
+  color: #fafbff;
+}
+
+.contact__photo_2 {
+  width: 348px;
+}
+.vertical__body {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.vertical__row {
+  display: flex;
+  margin: 0 -11px;
+}
+
+.vertical__column {
+  padding: 11px;
+  flex: 0 1 33.333%;
+  display: flex;
+}
+.project__image {
+  margin-bottom: 30px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+/* -------PROJECTS------- */
+.project__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fafbff;
+  margin-bottom: 13px;
+}
+.languages {
+  display: flex;
+}
+.language__text {
+  padding: 8px 16px;
+  margin: 0 8px;
+  text-align: center;
+  border: 2px solid #f6f6fe;
+  border-radius: 8px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fafbff;
+}
+
+.vertical__body_2 {
+  margin-top: 63px;
+}
+
+/* _______________________________________ */
+
+.footer {
+  height: 200px;
+}
