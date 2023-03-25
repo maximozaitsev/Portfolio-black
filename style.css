@@ -311,6 +311,54 @@ body {
   line-height: 28px;
   margin-bottom: 225px;
 }
-.footer {
-  height: 200px;
+
+/* FOOTER START */
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
 }
+.footer__insta {
+  margin-left: 80px;
+  width: 24px;
+  height: 24px;
+  background: url(instagram.png) no-repeat;
+}
+
+.footer__linkedin {
+  margin-left: 80px;
+  width: 24px;
+  height: 24px;
+  background: url(Linkedin.png) no-repeat;
+}
+.footer__github {
+  margin-left: 80px;
+  width: 24px;
+  height: 24px;
+  background: url(github.png) no-repeat;
+}
+.footer__twitter {
+  margin-left: 80px;
+  width: 24px;
+  height: 24px;
+  background: url(twitter.png) no-repeat;
+}
+/* FOOTER END */
+/* COPYRIGHT START */
+.copyright {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 139px;
+}
+.copyright__label {
+  background: url(copyright.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.copyright__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f9f5ff;
+}
+/* COPYRIGHT END */
