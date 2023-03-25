@@ -5,6 +5,7 @@ body {
   font-family: inter;
   background-color: black;
   height: 100%;
+  text-decoration: none;
 }
 .container {
   max-width: 1260px;
@@ -56,7 +57,12 @@ body {
   line-height: 27px;
   color: #f9f5ff;
 }
-
+.header__about:hover,
+.header__projects:hover,
+.header__contact:hover {
+  color: #cfccd3;
+  cursor: pointer;
+}
 .row {
   display: flex;
   flex-direction: column;
@@ -114,8 +120,10 @@ body {
 
   color: #0a0119;
 }
-/* .contact__photo {
-} */
+.btn:hover {
+  background: #c7c3cc;
+  cursor: pointer;
+}
 
 .gettoknowme {
   text-align: center;
@@ -130,27 +138,122 @@ body {
 .contact__photo_2 {
   width: 348px;
 }
-.vertical__body {
-  max-width: 1260px;
-  margin: 0 auto;
+
+/* __________________1_____________________ */
+/* Block start */
+
+.wrapper {
+  display: flex;
+  margin: 0 -10px;
+  margin-bottom: 63px;
 }
 
-.vertical__row {
-  display: flex;
-  margin: 0 -11px;
+.block {
+  width: 33.33%;
+  padding: 0 10px;
 }
 
-.vertical__column {
-  padding: 11px;
-  flex: 0 1 33.333%;
-  display: flex;
+/* Block end */
+
+/* Services start */
+
+/* Ховер!!! вызов */
+.services__item:hover .services__content-item {
+  opacity: 1;
 }
-.project__image {
+
+.services__item:hover .services__content:after {
+  opacity: 0.6;
+}
+
+.services__item {
+  text-decoration: none;
+}
+
+.services__content {
+  height: 397px;
   margin-bottom: 30px;
-  border: 1px solid #000000;
   border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-/* -------PROJECTS------- */
+
+/* черный ховер */
+.services__content:after {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  transition: opacity 0.4s ease; /*медленная анимация ховера*/
+}
+
+/* +, круг, текст ховер */
+.services__content-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.4s ease; /*медленная анимация ховера*/
+}
+
+.services__title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.23em;
+  color: #000; /*ссылку сделать черной*/
+  text-transform: uppercase;
+}
+
+.services__text {
+  position: absolute;
+  left: 99px;
+  bottom: 122px;
+
+  position: absolute;
+  width: 210px;
+  height: 104px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #fafbff;
+}
+.text1 {
+  color: #0a0119;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+
+  background: #f9f5ff;
+  border: 2px solid #f6f6fe;
+  border-radius: 8px;
+
+  margin-bottom: 24px;
+}
+.text2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+
+  border: 2px solid #f6f6fe;
+  border-radius: 8px;
+}
 .project__name {
   font-style: normal;
   font-weight: 500;
@@ -158,6 +261,8 @@ body {
   line-height: 29px;
   color: #fafbff;
   margin-bottom: 13px;
+  border: none;
+  text-decoration: none;
 }
 .languages {
   display: flex;
@@ -168,6 +273,7 @@ body {
   text-align: center;
   border: 2px solid #f6f6fe;
   border-radius: 8px;
+  text-decoration: none;
 
   font-style: normal;
   font-weight: 500;
@@ -175,13 +281,36 @@ body {
   line-height: 22px;
   color: #fafbff;
 }
-
-.vertical__body_2 {
-  margin-top: 63px;
+.language__text:hover {
+  background-color: rgba(65, 60, 60, 0.995);
+  cursor: pointer;
 }
+/* Services end */
+/* __________________2_____________________ */
 
-/* _______________________________________ */
-
+.contactme {
+  margin-top: 144px;
+  text-align: center;
+  color: #fafbff;
+}
+.contactme__text1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.contactme__text2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.contactme__text3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 28px;
+  margin-bottom: 225px;
+}
 .footer {
   height: 200px;
 }
