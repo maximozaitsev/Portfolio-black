@@ -1,0 +1,11 @@
+@media (max-width: 1260px) {
+  /* .container {
+    max-width: 1140px;
+  } */
+  .contact__photo {
+    max-width: 340.59px;
+  }
+  .contact__text {
+    max-width: 610px;
+  }
+}
